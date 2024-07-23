@@ -454,7 +454,7 @@
                 <p style="text-align: justify;">We use a <strong>pre-trained monocular depth network</strong> (e.g. DPT, ZoeDepth, Depth-Anything) to estimate depth for the original, unchallenging scenes. This provides us with reliable depth estimates for the easy scenarios.</p>
 
                 <h2 style="font-size: 2rem;">3 - Self-Distillation Protocol</h2>
-                <p style="text-align: justify;">We then fine-tune the depth network using a novel self-distillation protocol. This process involves using the generated challenging images as input, employing the depth estimates from the simple scenes as pseudo ground truth, and applying a scale-and-shift-invariant loss.</p>
+                <p style="text-align: justify;">We then fine-tune the depth network using a self-distillation protocol. This process involves using the generated challenging images as input, employing the depth estimates from the simple scenes as pseudo ground truth, and applying a scale-and-shift-invariant loss.</p>
             </td>
         </tr>
     </table>
@@ -473,7 +473,7 @@
                     <ul>
                         <li>Adverse weather (rain, snow, fog)</li>
                         <li>Low-light conditions</li>
-                        <li>Non-Lambertian surfaces (transparent and reflective objects)</li>
+                        <li>Transparent and Mirror (ToM) surfaces</li>
                     </ul>
                 </p>
             </td>
